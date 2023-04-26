@@ -1,0 +1,16 @@
+package com.nt.babluIT.StringCoding;
+
+public class Test15 {
+	public static void main(String[] args) {
+
+		String str = "Java code is awsome";
+
+		System.out.println(str.substring(2));
+		System.out.println(str.substring(2, 5));
+
+		byte[] bytes = str.getBytes();
+		System.out.println(bytes);
+
+	}
+
+}

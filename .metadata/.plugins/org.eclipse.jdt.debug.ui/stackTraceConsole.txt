@@ -1,0 +1,5 @@
+@Override
+	public void getTitle(String str) {
+		// TODO Auto-generated method stub
+		FirstInterface.super.getTitle(str);
+	}

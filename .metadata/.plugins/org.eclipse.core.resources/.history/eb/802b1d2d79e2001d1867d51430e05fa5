@@ -1,0 +1,45 @@
+package com.nt.babluIT.ArrayCoding;
+
+import java.util.ArrayList;
+
+public class Test132 {
+
+	public static void main(String[] args) {
+
+		ArrayList<Emp> al = new ArrayList<Emp>();
+
+		al.add(new Emp(101, "Sam"));
+		al.add(new Emp(102, "Sam12"));
+		al.add(new Emp(103, "Sam"));
+		al.add(new Emp(104, "Sam123"));
+		al.add(new Emp(105, "Sam12"));
+
+	}
+}
+
+class Emp {
+	int id;
+	String name;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Emp(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+}

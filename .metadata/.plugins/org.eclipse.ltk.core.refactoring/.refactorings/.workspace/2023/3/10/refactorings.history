@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/01-Junit4-App" element2="/04-Junit5-Exception-Test" element3="/04-JUnit-Power-Mockito-App" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1678015655314"/>&#x0A;<refactoring comment="Rename resource &apos;Collcetion_Map&apos; to &apos;Collcetion_Code&apos;" description="Rename resource &apos;Collcetion_Map&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Collcetion_Map" name="Collcetion_Code" stamp="1678528952400" updateReferences="true"/>
+</session>
