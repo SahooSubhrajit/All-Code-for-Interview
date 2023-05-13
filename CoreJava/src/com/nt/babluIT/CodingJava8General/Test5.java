@@ -13,9 +13,18 @@ public class Test5 {
 		 Integer integer = Arrays.stream(array)
 				                     .boxed()
 				                     .sorted(Comparator.reverseOrder())
-				                     .skip(2)
+				                     .skip(1)
 				                     .findFirst().get();
 		System.out.println(integer);
+		
+		
+		Integer integer1 = Arrays.stream(array)
+			      .boxed()
+			      .sorted((a,b) -> b.compareTo(a))
+			      .skip(1)
+			      .findFirst().get();
+			
+			System.out.println(integer1);
 
 	}
 

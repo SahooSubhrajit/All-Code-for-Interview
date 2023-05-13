@@ -13,7 +13,7 @@ public class Test3 {
 
 		for (int i = split.length - 1; i >= 0; i--) {
 			sb.append(split[i] + " ");
-			result = result + split[i];
+			result = result + split[i]+ " ";
 		}
 		System.out.println(result);
 		return sb;
