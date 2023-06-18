@@ -51,6 +51,8 @@ public class TestEmployee {
 
 		/*employeeList.stream().map(Employee::getDepartment).collect(Collectors.toCollection(TreeSet::new))
 		.forEach(i -> System.out.println(i));*/
+		
+		// Print count of all departments in the organization?
 
 		long deptCount = employeeList.stream().map(Employee::getDepartment).distinct().count();
 		System.out.println("\n" + deptCount);
@@ -71,6 +73,7 @@ public class TestEmployee {
 
 		/* Optional<Employee> max =
 				 employeeList.stream().max(Comparator.comparingDouble(Employee::getSalary));*/
+		
 
 		// Get the names of all employees who have joined after 2015?
 
@@ -99,6 +102,12 @@ public class TestEmployee {
 		}
 		
 		}*/
+		
+		/*employeeList.stream()
+					.collect(Collectors.groupingBy(Employee::getDepartment, Collectors.counting()))
+					.entrySet().stream()
+					.sorted(Comparator.comparing(Map.Entry::getValue))
+					.forEach(i -> System.out.println(i.getKey()+"  "+i.getValue()));*/
 
 		// What is the average salary of each department?
 
@@ -119,7 +128,7 @@ public class TestEmployee {
 				.filter(i -> i.getGender().equals("Male") && i.getDepartment().equals("Product Development"))
 				.min(Comparator.comparingInt(Employee::getAge));
 		Employee youngestMaleEmployeeDetails = youngestMaleEmployee.get();
-		System.out.println(youngestMaleEmployeeDetails);
+		System.out.println("youngestMaleEmployeeDetails================="+ youngestMaleEmployeeDetails);
 
 		// Who has the most working experience in the organization?
 

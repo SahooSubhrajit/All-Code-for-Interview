@@ -23,6 +23,28 @@ public class Test10 {
 
 		}
 		System.out.println(vCount + "  " + cCount);
+		
+		
+		
+
+		/*String str = "This is awsome Java";
+		
+		int vCount = 0;
+		int cCount = 0;
+		
+		StringBuilder sb = new StringBuilder(str.toLowerCase());
+		
+		for (int i = 0; i < sb.length(); i++) {
+			if (sb.charAt(i) == 'a' || sb.charAt(i) == 'e' || sb.charAt(i) == 'i' || sb.charAt(i) == 'o'
+					|| sb.charAt(i) == 'u') {
+				vCount++;
+				sb.setCharAt(i, Character.toUpperCase(sb.charAt(i)));
+			} else if (sb.charAt(i) >= 'a' && sb.charAt(i) <= 'z') {
+				cCount++;
+			}
+		}
+		
+		System.out.println(sb + "  " + vCount + "  " + cCount);*/
 
 	}
 
