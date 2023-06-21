@@ -1,6 +1,7 @@
 package com.nt.babluIT.ExtraCoding;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,15 +13,15 @@ public class Test6 {
 
 		HashMap<String, List<String>> hm = new HashMap<>();
 
-		hm.put("India", Arrays.asList("D1", "D2"));
-		hm.put("Indi2", Arrays.asList("D21", "D3"));
-		hm.put("Indi3", Arrays.asList("D4", "D5"));
+		hm.put("India1", Arrays.asList("D1", "D2"));
+		hm.put("India2", Arrays.asList("D21", "D3"));
+		hm.put("India3", Arrays.asList("D4", "D5"));
 
 		HashMap<String, List<String>> hm1 = new HashMap<>();
 
-		hm1.put("India", Arrays.asList("D1", "D2", "D3"));
-		hm1.put("Indi2", Arrays.asList("D21", "D3", "D"));
-		hm1.put("Indi3", Arrays.asList("D41", "D51", "D5"));
+		hm1.put("India1", Arrays.asList("D1", "D2", "D3"));
+		hm1.put("India2", Arrays.asList("D21", "D3", "D"));
+		hm1.put("India3", Arrays.asList("D41", "D51", "D5"));
 
 		HashMap<String, String> hm3 = new HashMap<>();
 
@@ -47,6 +48,10 @@ public class Test6 {
 		hm1.entrySet().stream().forEach(i -> System.out.println(i.getKey() + " " + i.getValue()));
 		System.out.println();
 		hm3.entrySet().stream().forEach(i -> System.out.println(i.getKey() + " " + i.getValue()));
+		System.out.println();
+
+		hm3.entrySet().stream().sorted(Comparator.comparing(Map.Entry::getKey))
+				.forEach(i -> System.out.println(i.getKey() + "   " + i.getValue()));
 
 	}
 
