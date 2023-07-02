@@ -10,7 +10,6 @@ public class Test8 {
 		System.out.println("Before reversing array::  " + Arrays.toString(array));
 
 		int temp;
-		System.out.println(array.length);
 
 		for (int i = 0; i < array.length / 2; i++) {
 			temp = array[i];

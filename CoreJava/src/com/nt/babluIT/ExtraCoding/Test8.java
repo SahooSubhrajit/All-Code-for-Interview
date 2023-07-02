@@ -18,6 +18,8 @@ public class Test8 {
 
 		HashMap<Character, Integer> hm3 = new HashMap();
 
+		HashMap<Character, Integer> hm4 = new HashMap();
+
 		for (Character c : str.toCharArray()) {
 			if (hm1.containsKey(c)) {
 				hm1.put(c, hm1.get(c) + 1);
@@ -45,6 +47,22 @@ public class Test8 {
 		}
 
 		hm3.entrySet().stream().map(s -> s.getKey()).forEach(i -> System.out.print(i + "   "));
+
+		for (Character c : str.toCharArray()) {
+			for (Character c1 : str1.toCharArray()) {
+				if (c.equals(c1)) {
+					if (hm4.containsKey(c)) {
+						hm4.put(c, hm4.get(c) + 1);
+					} else {
+						hm4.put(c, 0);
+					}
+				}
+			}
+		}
+
+		System.out.println();
+
+		hm4.entrySet().stream().map(s -> s.getKey()).forEach(i -> System.out.print(i + "   "));
 
 	}
 

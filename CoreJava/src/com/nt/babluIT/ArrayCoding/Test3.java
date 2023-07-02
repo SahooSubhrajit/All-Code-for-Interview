@@ -36,27 +36,27 @@ public class Test3 {
 
 	private static int secondLowest(int[] array) {
 
-		int firstLargest, secondLargest;
+		int firstLowest, secondLowest;
 
 		if (array[0] < array[1]) {
-			firstLargest = array[1];
-			secondLargest = array[0];
+			firstLowest = array[1];
+			secondLowest = array[0];
 		} else {
-			firstLargest = array[0];
-			secondLargest = array[1];
+			firstLowest= array[0];
+			secondLowest = array[1];
 		}
 
 		for (int i = 2; i < array.length; i++) {
-			if (array[i] < firstLargest) {
-				secondLargest = firstLargest;
-				firstLargest = array[i];
-			} else if (array[i] > firstLargest && array[i] < secondLargest) {
-				secondLargest = array[i];
+			if (array[i] < firstLowest) {
+				secondLowest = firstLowest;
+				firstLowest = array[i];
+			} else if (array[i] > firstLowest && array[i] < secondLowest) {
+				secondLowest = array[i];
 
 			}
 
 		}
-		return secondLargest;
+		return secondLowest;
 
 	}
 

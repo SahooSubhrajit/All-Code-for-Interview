@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="getStringNames"/>
+		<item key="selection" value="fffffffffffffff::"/>
 		<list key="findhistory">
+			<item value="fffffffffffffff::"/>
+			<item value="youngestMaleEmployeeDetails"/>
 			<item value="4, 3, 2, 4, 9, 2"/>
 			<item value="getStringNames"/>
 			<item value="package com.nt.babluIT;"/>
